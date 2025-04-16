@@ -1,0 +1,20 @@
+# questions_of_faith.py
+
+def get_christian_faith_questions():
+    questions = [
+        "1. Who is Jesus Christ according to Christian belief?",
+        "2. What is the significance of the resurrection of Jesus?",
+        "3. What does the Bible say about salvation?",
+        "4. How does Christianity define the concept of sin?",
+        "5. What is the role of prayer in the Christian faith?",
+        "6. What is the meaning of the Holy Trinity?",
+        "7. How does Christianity explain the purpose of human life?",
+        "8. What are the Ten Commandments and why are they important?",
+        "9. What is the significance of baptism in Christianity?",
+        "10. How does Christianity address the problem of suffering and evil?"
+    ]
+    return questions
+
+if __name__ == "__main__":
+    for question in get_christian_faith_questions():
+        print(question)
