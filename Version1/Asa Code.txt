@@ -1,31 +1,82 @@
 package GitHubRepo;
 
-public class QuestionsOfFatih {
-	
-	    public static void main(String[] args) {
-	        System.out.println("Welcome to Questions of Faith, hope you are having a blessed day.");
-	        System.out.println("Today we have 10 of the most common questions in the Christian faith.");
-	        System.out.println();
-	        System.out.println("Please select 1 of the 10 questions:");
-	        System.out.println();
-	        System.out.println("1. What is Salvation?");
-	        System.out.println();
-	        System.out.println("2. Why does God allow suffering?");
-	        System.out.println();
-	        System.out.println("3. What happens after death?");
-	        System.out.println();
-	        System.out.println("4. What is God?");
-	        System.out.println();
-	        System.out.println("5. How can I trust the Bible?");
-	        System.out.println();
-	        System.out.println("6. What is the Trinity?");
-	        System.out.println();
-	        System.out.println("7. How does free will affect faith?");
-	        System.out.println();
-	        System.out.println("8. Can you take the Bible literally?");
-	        System.out.println();
-	        System.out.println("9. Are science and God opposed?");
-	        System.out.println();
-	        System.out.println("10. What is the central message of Christianity?");
-	    }
-	}
+import java.util.Scanner;
+
+public class QuestionsOfFaith {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Welcome to Questions of Faith, hope you are having a blessed day.");
+        System.out.println("Today we have 10 of the most common questions in the Christian faith.");
+        System.out.println();
+        System.out.println("Please select 1 of the 10 questions by entering the corresponding number:");
+
+        String[] questions = {
+            "1. What is Salvation?",
+            "2. Why does God allow suffering?",
+            "3. What happens after death?",
+            "4. What is God?",
+            "5. How can I trust the Bible?",
+            "6. What is the Trinity?",
+            "7. How does free will affect faith?",
+            "8. Can you take the Bible literally?",
+            "9. Are science and God opposed?",
+            "10. What is the central message of Christianity?"
+        };
+
+        for (String question : questions) {
+            System.out.println(question);
+        }
+
+        int choice = scanner.nextInt();
+        System.out.println();
+
+        switch (choice) {
+            case 1:
+                System.out.println("Salvation is the deliverance from sin through faith in Jesus Christ.");
+                System.out.println("Biblical Reference: Ephesians 2:8-9 - \"For by grace you have been saved through faith, and that not of yourselves; it is the gift of God, not of works, lest anyone should boast.\"");
+                break;
+            case 2:
+                System.out.println("God allows suffering to refine faith, teach endurance, and fulfill His purposes.");
+                System.out.println("Biblical Reference: Romans 8:28 - \"And we know that in all things God works for the good of those who love him, who have been called according to his purpose.\"");
+                break;
+            case 3:
+                System.out.println("After death, believers are promised eternal life with God.");
+                System.out.println("Biblical Reference: John 11:25 - \"Jesus said to her, ‘I am the resurrection and the life. The one who believes in me will live, even though they die.’\"");
+                break;
+            case 4:
+                System.out.println("God is the eternal Creator, sovereign over all things.");
+                System.out.println("Biblical Reference: Isaiah 40:28 - \"Do you not know? Have you not heard? The LORD is the everlasting God, the Creator of the ends of the earth.\"");
+                break;
+            case 5:
+                System.out.println("The Bible is trustworthy as God’s inspired Word.");
+                System.out.println("Biblical Reference: 2 Timothy 3:16-17 - \"All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness.\"");
+                break;
+            case 6:
+                System.out.println("The Trinity refers to God as Father, Son, and Holy Spirit.");
+                System.out.println("Biblical Reference: Matthew 28:19 - \"Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.\"");
+                break;
+            case 7:
+                System.out.println("Free will allows people to choose faith in God or reject Him.");
+                System.out.println("Biblical Reference: Deuteronomy 30:19 - \"I have set before you life and death, blessing and cursing; therefore choose life, that both you and your descendants may live.\"");
+                break;
+            case 8:
+                System.out.println("The Bible contains both literal truth and symbolic meaning.");
+                System.out.println("Biblical Reference: 2 Peter 1:20-21 - \"Above all, you must understand that no prophecy of Scripture came about by the prophet’s own interpretation of things.\"");
+                break;
+            case 9:
+                System.out.println("Science and God are not opposed; God is the author of order and reason.");
+                System.out.println("Biblical Reference: Colossians 1:16 - \"For in him all things were created: things in heaven and on earth, visible and invisible.\"");
+                break;
+            case 10:
+                System.out.println("Christianity is about love, salvation, and faith in Christ.");
+                System.out.println("Biblical Reference: John 3:16 - \"For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.\"");
+                break;
+            default:
+                System.out.println("Invalid choice. Please select a number between 1 and 10.");
+        }
+
+        scanner.close();
+    }
+}
