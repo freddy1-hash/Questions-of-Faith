@@ -1,0 +1,31 @@
+package GitHubRepo;
+
+public class QuestionsOfFatih {
+	
+	    public static void main(String[] args) {
+	        System.out.println("Welcome to Questions of Faith, hope you are having a blessed day.");
+	        System.out.println("Today we have 10 of the most common questions in the Christian faith.");
+	        System.out.println();
+	        System.out.println("Please select 1 of the 10 questions:");
+	        System.out.println();
+	        System.out.println("1. What is Salvation?");
+	        System.out.println();
+	        System.out.println("2. Why does God allow suffering?");
+	        System.out.println();
+	        System.out.println("3. What happens after death?");
+	        System.out.println();
+	        System.out.println("4. What is God?");
+	        System.out.println();
+	        System.out.println("5. How can I trust the Bible?");
+	        System.out.println();
+	        System.out.println("6. What is the Trinity?");
+	        System.out.println();
+	        System.out.println("7. How does free will affect faith?");
+	        System.out.println();
+	        System.out.println("8. Can you take the Bible literally?");
+	        System.out.println();
+	        System.out.println("9. Are science and God opposed?");
+	        System.out.println();
+	        System.out.println("10. What is the central message of Christianity?");
+	    }
+	}
